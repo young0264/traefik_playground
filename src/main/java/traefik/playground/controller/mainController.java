@@ -1,0 +1,16 @@
+package traefik.playground.controller;
+
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+@Slf4j
+public class mainController {
+
+    @GetMapping("/")
+    public String mainView() {
+        log.info("main view, main view");
+        return "main";
+    }
+}
